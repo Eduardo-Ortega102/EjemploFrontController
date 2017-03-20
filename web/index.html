@@ -6,10 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>Ejemplo FrontController</div>
+        <div>Saludo</div>
         <form action="FrontController" method="POST">
             <input type="text" name="name" value="" />
             <input type="hidden" name="command" value="Hello" />
+            <input type="submit" value="Enviar" />
+        </form>
+        
+        <div>Adios</div>
+        <form action="FrontController" method="POST">
+            <input type="hidden" name="command" value="Bye" />
+            <input type="submit" value="Enviar" />
+        </form>
+        
+        <div>Fecha</div>
+        <form action="FrontController" method="POST">
+            <input type="hidden" name="command" value="LocalDate" />
             <input type="submit" value="Enviar" />
         </form>
     </body>
